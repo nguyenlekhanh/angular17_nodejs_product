@@ -8,3 +8,12 @@
         </app-product>
     </div>
 </div>
+
+<!-- Paginator -->
+<p-paginator
+    [rows]="rows"
+    [totalRecords]="totalRecords"
+    [rowsPerPageOptions]="[6, 12, 20]"
+    (onPageChange)="onPageChange($event)"
+    #paginator
+></p-paginator>
